@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #222222;
+}
+
+/* --------------------------------------------------Nav bar----------------------------------------------------- */
+
+nav {
+    position: sticky;
+    width: 97%;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 50px;
+}
+
+.logo img {
+    width: 25px;
+}
+.logo img:hover {
+    transform: scale(1.7);
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;   
+    color: #fbfcfc;
+    padding: 12px 0px;
+    /* background-color: aqua; */
+}
+
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: rgb(27, 27, 27);
+    min-width: 160px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 1px white;
+    z-index: 1;
+    right: 200px;
+}
+
+.dropdown-content a {
+    display: block;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fbfcfc;
+    opacity: 0.6;
+    transition: .5s;
+    color: #222222;
+}
+
+
+/* --------------------------------------------------Top wheel----------------------------------------------------- */
+
+.wheel-box {
+    width: 1500px;
+    height: 1500px;
+    position:absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#wheel-border {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    border: solid 1px white;
+    opacity: 0.4;
+}
+
+#wheel-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    color: #fbfcfc;
+    transition: 1s;
+}
+
+#wheel-text h2 {
+    margin: 0 auto;
+    padding: 10px 0px;
+    width: 250px;
+    border-bottom: 1px solid #fbfcfc;
+    font-weight: 100;
+    
+}
+
+#wheel-text p {
+    margin: 15px 0px;
+    
+}
+
+#top-wheel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s ease-in-out;
+}
+
+.feature img {
+    width: 80px;
+    margin: 0 auto;
+    background-color: #222222;
+    border-radius: 50%;
+    padding: 0px 20px 0px 20px;
+    /* border: solid 2px white;  */
+}
+
+.feature {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    color: #fbfcfc;
+}
+
+.feature h2 {
+    font-weight: 100;
+}
+
+.feature div {
+    margin: 20px auto;
+}
+
+.one {
+    top: 1358px;
+    left: 690px;
+}
+
+.two {
+    top: 693px;
+    left: 22px;
+    transform: rotate(90deg);
+}
+
+.three {
+    top: 22px;
+    left: 690px;
+    transform: rotate(180deg);
+}
+
+.four {
+    top: 695px;
+    left: 1358px;
+    transform: rotate(270deg);
+}
+
+/* -----------------------------------Controller--------------------------------- */
+
+.wheel-control {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);  
+}
+
+.wheel-control h3 {
+    margin: 14px 50px;
+    color: #fbfcfc;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.wheel-control h3:hover {
+    transform: scale(1.5);
+    transition: .5s;
+}
+
+#left-btn {
+    width: 40px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+#left-btn:hover {
+   margin: 0px 15px 0px 0px;
+   transition: .4s;
+}
+
+#right-btn {
+    width: 40px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: .4s;
+}
+
+#right-btn:hover {
+    margin: 0px 0px 0px 15px;
+    transition: .4s;
+ }
+
+/* li:hover {
+    z-index: 9;
+    border: 2px solid #292929;
+    background-color: #292929;
+    transform: scale(1.4);
+    opacity: 0.7;
+    transition: .5s;
+} */
+
+/* -----------------------------------Mid section--------------------------------- */
+
+/* .mid-section {
+    width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   position: relative;
+   background-color: #222222;
+} */
+
+/* -----------------------------------Social buttons area--------------------------------- */
+
+.social-box {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.social-box li {
+    display: inline-block;
+    margin: 0 15px;
+    /* text-decoration: none; */
+}
+
+.social-box img {
+    width: 40px;
+    transition: .5s;
+}
+
+.social-box img:hover {
+    transform: scale(1.4);
+    transition: .4s;
+}
